@@ -6,6 +6,7 @@
     <meta name="description" content="WDD 231 - Web Frontend Development I - Francisco Lima, Know more about me and my country of origin, as well as see my project for the Web Frontend Development I Week 01.">
     <meta name="author" content="Francisco Lima">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +17,18 @@
     <header>
         <h1><img src="images/profile.jpg" alt="perfil" width="100">Francisco Lima</h1>
         <nav>
-            <a href=""  rel="noopener noreferrer"><b>Home</b></a>
-            <a href="" rel="noopener noreferrer"><b>Chamber</b></a>
-            <a href="https://github.com/franciscolima-pro" target="_blank" rel="noopener noreferrer"><b>GitHub Profile</b></a>       
-            <a href="https://www.linkedin.com/in/francisco-lima-713203229/" target="_blank" rel="noopener noreferrer"><b>Linkedin</b></a> 
-        </nav>
+            <div class="hamburger" id="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+              <li><a href=""  rel="noopener noreferrer"><b>Home</b></a></li>
+              <li><a href="" rel="noopener noreferrer"><b>Chamber</b></a></li>
+              <li><a href="https://github.com/franciscolima-pro" target="_blank" rel="noopener noreferrer"><b>GitHub Profile</b></a></li>
+              <li><a href="https://www.linkedin.com/in/francisco-lima-713203229/" target="_blank" rel="noopener noreferrer"><b>Linkedin</b></a></li>
+            </ul>
+          </nav>
     </header>
     <main>
         <section>
@@ -42,19 +50,20 @@
         </section>
         <section>
             <h2>Web and Computer Programming Certificate</h2>
-            <nav>
-                <a href=""><b>All</b></a>
-                <a href=""><b>CSE</b></a>
-                <a href=""><b>WDD</b></a>
-            </nav>
-            <div id="subjects">
-                <a href="" class="subrown"><b>CSE 110</b></a>
-                <a href="" class="subrown"><b>WDD 130</b></a>
-                <a href="" class="subrown"><b>CSE 111</b></a>
-                <a href="" class="sugray"><b>CSE 210</b></a>
-                <a href="" class="subrown"><b>WDD 131</b></a>
-                <a href="" class="sugray"><b>WDD 231</b></a>
-            </div>
+             <nav>
+                <button id="all"><b>All</b></button>
+                <button id="cse"><b>CSE</b></button>
+                <button id="wdd"><b>WDD</b></button>
+                <h3 id="totalCredits">Total Credits: 0</h3>
+              </nav>
+              <div id="subjects">
+                <a href="#" class="subrown" data-subject="CSE"><b>CSE 110</b></a>
+                <a href="#" class="subrown" data-subject="WDD"><b>WDD 130</b></a>
+                <a href="#" class="subrown" data-subject="CSE"><b>CSE 111</b></a>
+                <a href="#" class="subrown" data-subject="CSE"><b>CSE 210</b></a>
+                <a href="#" class="subrown" data-subject="WDD"><b>WDD 131</b></a>
+                <a href="#" class="sugray" data-subject="WDD"><b>WDD 231</b></a>
+              </div>
         </section>
     </main>
     
