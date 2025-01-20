@@ -98,3 +98,8 @@ function displayTotalCredits() {
     const totalCredits = calculateCredits(courses);
     document.getElementById("totalCredits").textContent = `Total Credits: ${totalCredits}`;
 }
+ 
+//Objetivo:
+//#1 Seleciona todos os cursos não já completados
+//#2 filtrar os cursos de acordo com o botão clicado, wdd, cse, all
+//#3 Somar o valor dos créditos de todos os cursos que forem mostrados nos filtros, exceto dos que não tiverem sido completados
