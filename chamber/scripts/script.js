@@ -27,8 +27,8 @@ hamburger.addEventListener('click', () => {
 
 async function loadData(){
     try{
-        const response = await fetch('/chamber/data/members.json'); // Espera pela resposta do fetch
-        const data = await response.json();  
+            const response = await fetch('/chamber/data/members.json'); // Espera pela resposta do fetch
+            const data = await response.json();  
             
             for (company of data){
                 const companyDiv = document.createElement('div');
@@ -39,8 +39,7 @@ async function loadData(){
                 <p>${company.phone}</p>
                 <p>${company.url}</p>`;
                 conteiner.appendChild(companyDiv);
-
-    }
+            }
     }catch(error){
         console.log("Erro:", error)
     }

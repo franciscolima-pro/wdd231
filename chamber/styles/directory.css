@@ -22,6 +22,10 @@ header{
     gap: 1rem;
 }
 
+#theme-toggle{
+    background-color: transparent;
+}
+
 .nav-links{
     list-style-type: none;
     display: flex;
