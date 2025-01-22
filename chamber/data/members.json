@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Blue Innovations",
+        "address": "236 Av. Lind, Curitiba, BR",
+        "phone": "+55 41 9856-8946",
+        "url": "https://www.blueinnovations.com",
+        "icon": "blueinnovations-icon.jpg",
+        "level": 1,
+        "industry": "Technology"
+    },
+    {
+        "name": "Tech Solutions",
+        "address": "569 Main St, Curitiba, SP",
+        "phone": "+55 41 9256-8826",
+        "url": "https://www.techsolutions.com",
+        "icon": "techsolutions-icon.jpg",
+        "level": 3,
+        "industry": "Technology"
+    },
+    {
+        "name": "Green Life",
+        "address": "252 Av. Amanci, Curitiba, BR",
+        "phone": "+55 41 9856-8946",
+        "url": "https://www.greenlife.com",
+        "icon": "greenlife-icon.jpg",
+        "level": 3,
+        "industry": "Food"
+    },
+    {
+        "name": "NEO Innovations",
+        "address": "2122 Av. Grimaldi, Curitiba, BR",
+        "phone": "+55 41 9366-8826",
+        "url": "https://www.neoinnovations.com",
+        "icon": "neoinnovations-icon.jpg",
+        "level": 1,
+        "industry": "Technology"
+    },
+    {
+        "name": "Lizer Motors",
+        "address": "567 Av. Raiert, Curitiba, BR",
+        "phone": "+55 41 1235-8397",
+        "url": "https://www.lizermotors.com",
+        "icon": "lizermotors-icon.jpg",
+        "level": 2,
+        "industry": "Automotive"
+    },
+    {
+        "name": "Publisher TRT",
+        "address": "597 Av. Green Line, Curitiba, BR",
+        "phone": "+55 41 9366-7566",
+        "url": "https://www.publishertrt.com",
+        "icon": "publishertrt-icon.jpg",
+        "level": 2,
+        "industry": "Entertainment and Media"
+    },
+    {
+        "name": "Bright Ideas",
+        "address": "789 Innovation Rd, Curitiba, BR",
+        "phone": "+55 41 2345-6789",
+        "url": "https://www.brightideas.com",
+        "icon": "brightideas-logo.svg",
+        "level": 2,
+        "industry": "Technology"
+    }
+]

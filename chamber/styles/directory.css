@@ -1,0 +1,245 @@
+/* 1 -  Estilização header */
+h1, h2,#footer, nav a{
+    font-family: "Quicksand", serif;
+  }
+
+p{
+    font-family: "Roboto", serif;
+}
+
+header{
+    background-color: #1e1d1d;
+    color: #4D9601;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem 1rem 7rem;
+}
+
+.divlogo{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.nav-links li a{
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover, button:hover{
+    color: #4D9601;
+    transform: scale(1.1);
+}
+
+.nav-links li button{
+    border: none;
+}
+
+/* Estilização header FIM*/
+
+/* 2 - Estilização Main*/
+.list-view div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem; 
+}
+
+.list-view ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem; 
+    list-style-type: none;
+    background-color: rgb(93, 91, 91);
+    color: white;
+}
+
+.list-view .company:nth-child(even) {
+    background-color: rgb(209, 209, 209);
+  }
+
+
+.grid-view{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 3rem;
+}
+.grid-view div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    padding: 1em;
+    background-color: rgb(203, 200, 200);
+    border-radius: 0.5rem;
+}
+
+.grid-view ul{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.menu button{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background: transparent;
+    border: none;
+}
+
+
+/*Estilização Main FIM*/
+
+/* 3 - Estilização Footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e1d1d;
+    padding: 0.7rem;
+    color: white;
+    align-items: center;
+}
+
+.social-links a{
+    padding: 2em;
+}
+
+.footer-first-p{
+    color: #4D9601;
+}
+/* Estilização Footer FIM*/
+
+
+@media (max-width: 800px){
+    .hamburger {
+        display: flex;
+        padding-right: 4em;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      
+      .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+      }
+    
+      .nav-links{
+        display: none;
+        background-color: #1e1d1d;
+        padding: 0em 1em 0em 1em;
+        border-radius: 0.5em;
+      }
+
+      .nav-links li a{
+        color: #4D9601;
+        padding-top: 1em;
+      }
+
+      .nav-links.active {
+        gap: 0.5em;
+        display: grid; /* Torna as opções visíveis quando a classe 'active' é adicionada */
+        grid-template-columns: 1fr;
+        align-items:baseline;
+        margin-right: 5em;
+        position: absolute;
+    }
+
+    .list-view .company{
+        padding: 0;
+        display: flex;
+        gap: 1em;
+    }
+
+    .list-view .company p{
+        width: 50px;
+    }
+
+    .list-view .company :nth-last-child(1){
+        word-wrap: break-word;
+    }
+
+    .list-view div img{
+        width: 50px;
+    }
+
+      header{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        gap: 3em;
+        align-items: center;
+        position: relative;
+      }
+
+      .divlogo{
+        padding: 1em;
+      }
+
+      .grid-view{
+        display: flex;
+        flex-direction: column;
+      }
+
+      footer div{
+        padding: 0;
+      }
+
+      footer :nth-last-child(2){
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+}
+
+@media (min-width: 805px) and (max-width: 1200px){
+    header{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .grid-view{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer div{
+        padding: 0;
+      }
+
+      footer :nth-last-child(2){
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
