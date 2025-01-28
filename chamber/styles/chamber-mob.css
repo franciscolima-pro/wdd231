@@ -123,8 +123,10 @@
     }
 
     main #hero div button{
-        font-size: 0.4rem;
-        padding: 0.6em;
+        font-size: 0.6rem;
+        padding: 0.7em;
+        color:#4D9601;
+        background-color: black;
     }
       
     main #hero div{
@@ -163,4 +165,14 @@
         align-items: center;
       }
     
+}
+
+@media(max-width: 400px){
+    main #hero div button{
+        border-radius: 0.2em;
+        font-size: 9px;
+        padding: 0.2em;
+        color:#4D9601;
+        background-color: black;
+    }
 }
