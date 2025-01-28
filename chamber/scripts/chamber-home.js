@@ -133,4 +133,4 @@ function displayResults(data, data2){
 
 // Chamando a função para executar
 apiFetch();
-loadData();
+// loadData();
