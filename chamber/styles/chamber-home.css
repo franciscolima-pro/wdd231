@@ -1,0 +1,532 @@
+/* 1 -  Estilização header */
+h1, h2, h3,#footer, nav a{
+    font-family: "Quicksand", serif;
+  }
+
+p{
+    font-family: "Roboto", serif;
+}
+
+header{
+    background-color: #1e1d1d;
+    color: #4D9601;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem 1rem 7rem;
+}
+
+.divlogo{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#theme-toggle{
+    background-color: transparent;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.nav-links li a{
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover, button:hover{
+    color: #4D9601;
+    transform: scale(1.1);
+}
+
+.nav-links li button{
+    border: none;
+}
+
+/* Estilização Main */
+main{
+    padding: 0 3rem 3rem;
+}
+
+main #hero{
+  text-align: right;
+  background-color: #626F80;
+  position: relative;
+}
+
+main #hero div{
+    position: absolute;
+    background-color: #a6b19a00;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5em;
+    width: 31%;
+    left: 1%;
+    top: 6%;
+}
+
+main #hero div h1{
+    font-size: 4em;
+    color: white;
+    font-family: 'Lancelot', serif;
+}
+
+main h2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+main #hero div button{
+    padding: 1em;
+    border: none;
+    border-radius: 0.8em;
+}
+main #hero div button b{
+    text-decoration: none;
+    color: #62b40a;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main #hero div p{
+    color: whitesmoke;
+    width: 80%;
+    font-size: 0.8em;
+}
+
+
+/* Estilização Main 1° Section */
+
+#time {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1em;
+}
+
+#time h2{
+    background-color: #1E1D1D;
+    padding: 0.2em;
+    color: white;
+}
+
+#events{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 0.5em;
+    background-color: #626f805d;
+}
+
+#events div{
+    background-color: #626F80;
+    padding: 0.7em;
+    border-radius: 0.3em;
+}
+
+#events div .desc{
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+#events div h3{
+    color: white;
+    border-bottom: 1px solid;
+    margin-bottom: 0.5em;
+}
+
+#events .date{
+    background-color:white;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#events img{
+    width: 1.5em;
+}
+/* Estilização Main 1° Section FIM*/
+
+/* Estilização Main 2° Section*/
+#cweather{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #626f805d;
+    padding: 1em;
+}
+
+#cweather p{
+    padding: 0.1em;
+}
+
+#weather-icon{
+    width: 5em;
+}
+
+#weatherF{
+    background-color: #626f805d;
+    padding: 1em;
+    padding-bottom: 4.9em;
+}
+
+#weatherF p{
+padding: 0.5em;
+font-size: 1.3em;
+}
+/* Estilização 2° Section FIM*/
+
+/* Estilização 3° Section */
+
+#members{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em; 
+    margin-top: 4rem;
+}
+
+#members div{
+    background-color: #bdc3ca;
+    padding: 1em;
+    border-radius: 0.7em;
+}
+
+#members div .memberstitle{
+    text-align: center;
+    border-bottom: 1px solid;
+    border-radius: 0;
+}
+
+
+
+.spotlight img{
+    width: 6em;
+}
+
+.spotlight{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Estilização footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e1d1d;
+    padding: 0.7rem;
+    color: white;
+    align-items: center;
+}
+
+.social-links a{
+    padding: 2em;
+}
+
+.footer-first-p{
+    color: #4D9601;
+}
+
+@media(max-width: 1000px){
+    header{
+        background-color: #1e1d1d;
+        color: #4D9601;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 4rem 1rem 4rem;
+    }
+
+    main #hero img{
+        width: 80%;
+        height: auto;
+    }
+
+    main #hero div h1{
+        font-size: 1.5rem;
+    }
+
+    main #hero div p{
+        font-size: 0.6rem;
+    }
+
+    main #hero div button{
+        font-size: 0.5rem;
+    }
+      
+    main #hero div{
+        position: absolute;
+        background-color: #a6b19a00;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1.5em;
+        width: 31%;
+        left: -2%;
+        top: 6%;
+    }
+
+    #events{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        padding: 0.5em;
+        background-color: #626f805d;
+    }
+    
+    #events div{
+        background-color: #626F80;
+        padding: 0.5em;
+        border-radius: 0.3em;
+    }
+    
+    #events div .desc{
+        font-size: 0.6em;
+        color: whitesmoke;
+    }
+    
+    #events div h3{
+        font-size: 0.9em;
+        color: white;
+        border-bottom: 1px solid;
+        margin-bottom: 0.5em;
+    }
+    
+    #events .date{
+        background-color:white;
+        border-radius: 0.2em;
+        padding: 0.2em;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        margin-bottom: 1em;
+        font-size: 0.9em;
+    }
+    
+    #events img{
+        width: 1.5em;
+    }
+
+    #members{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em; 
+        margin-top: 4rem;
+    }
+    
+    #members div{
+        background-color: #bdc3ca;
+        padding: 0.5em;
+        border-radius: 0.7em;
+        font-size: 0.9em;
+    }
+    
+    #members div .memberstitle{
+        text-align: center;
+        border-bottom: 1px solid;
+        border-radius: 0;
+    }
+    
+    
+    
+    .spotlight img{
+        width: 6em;
+    }
+    
+    .spotlight{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    footer div{
+        padding: 0;
+      }
+
+      footer :nth-last-child(2){
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
+@media(max-width: 800px){
+    header{
+        background-color: #1e1d1d;
+        color: #4D9601;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+
+    .divlogo{
+        font-size: 0.7em;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-right: 3em;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        z-index: 100;
+      }
+      
+      .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+      }
+    
+      .nav-links{
+        display: none;
+        background-color: #1e1d1d;
+        padding: 0em 1em 0em 0em;
+        border-radius: 0.3em;
+        font-size: 0.7em;
+      }
+
+      .nav-links li a{
+        color: #4D9601;
+        padding-top: 1em;
+      }
+
+      .nav-links.active {
+        gap: 0.5em;
+        display: grid; /* Torna as opções visíveis quando a classe 'active' é adicionada */
+        grid-template-columns: 1fr;
+        align-items:baseline;
+        margin-right: 5em;
+        position: absolute;
+        z-index: 101;
+        padding: 1.5em;
+    }
+
+    main{
+        padding: 0 1.5rem;
+    }
+
+    main #hero img{
+        width: 80%;
+        height: 11rem;
+    }
+
+    main #hero div h1{
+        font-size: 0.9rem;
+    }
+
+    main #hero div p{
+        font-size: 0.5rem;
+        font: bold;
+    }
+
+    main #hero div button{
+        font-size: 0.4rem;
+    }
+      
+    main #hero div{
+        position: absolute;
+        background-color: #a6b19a00;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 0.5em;
+        width: 31%;
+        left: -1%;
+        top: 6%;
+    }
+
+    #time {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    #events{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        padding: 0.5em;
+        background-color: #626f805d;
+    }
+    
+    #events div{
+        background-color: #626F80;
+        padding: 0.5em;
+        border-radius: 0.3em;
+    }
+    
+    #events div .desc{
+        font-size: 0.6em;
+        color: whitesmoke;
+    }
+    
+    #events div h3{
+        font-size: 0.9em;
+        color: white;
+        border-bottom: 1px solid;
+        margin-bottom: 0.5em;
+    }
+    
+    #events .date{
+        background-color:white;
+        border-radius: 0.2em;
+        padding: 0.2em;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        margin-bottom: 1em;
+        font-size: 0.9em;
+    }
+    
+    #events img{
+        width: 1.5em;
+    }
+
+    #members{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em; 
+        margin-top: 4rem;
+    }
+    
+    #members div{
+        background-color: #bdc3ca;
+        padding: 0.5em;
+        border-radius: 0.7em;
+        font-size: 0.9em;
+    }
+    
+    #members div .memberstitle{
+        text-align: center;
+        border-bottom: 1px solid;
+        border-radius: 0;
+    }
+    
+    
+    
+    .spotlight img{
+        width: 6em;
+    }
+    
+    .spotlight{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
