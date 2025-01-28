@@ -1,0 +1,159 @@
+@media(max-width: 1000px){
+    header{
+        padding: 1rem 4rem 1rem 4rem;
+    }
+
+    main #hero img{
+        width: 80%;
+        height: auto;
+    }
+
+    main #hero div h1{
+        font-size: 1.5rem;
+    }
+
+    main #hero div p{
+        font-size: 0.6rem;
+    }
+
+    main #hero div button{
+        font-size: 0.5rem;
+    }
+      
+    main #hero div{
+        left: -2%;
+    }
+
+    #events{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #events div .desc{
+        font-size: 0.6em;
+    }
+    
+    #events div h3{
+        font-size: 0.9em;
+    }
+    
+    #events .date{
+        font-size: 0.9em;
+    }
+
+    #members{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #members div{
+        padding: 0.5em;
+        font-size: 0.9em;
+    }
+
+      footer :nth-last-child(2){
+        padding: 0;
+      }
+}
+
+@media(max-width: 800px){
+    header{
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+
+    .divlogo{
+        font-size: 0.7em;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-right: 3em;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;
+        z-index: 100;
+      }
+      
+      .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+      }
+    
+      .nav-links{
+        display: none;
+        background-color: #1e1d1d;
+        padding: 0em 1em 0em 0em;
+        border-radius: 0.3em;
+        font-size: 0.7em;
+      }
+
+      .nav-links li a{
+        color: #4D9601;
+        padding-top: 1em;
+      }
+
+      .nav-links.active {
+        gap: 0.5em;
+        display: grid; /* Torna as opções visíveis quando a classe 'active' é adicionada */
+        grid-template-columns: 1fr;
+        align-items:baseline;
+        margin-right: 5em;
+        position: absolute;
+        z-index: 101;
+        padding: 1.5em;
+    }
+
+    main{
+        padding: 0 1.5rem;
+    }
+
+    main #hero img{
+        width: 80%;
+        height: 11rem;
+    }
+
+    main #hero div h1{
+        font-size: 0.9rem;
+    }
+
+    main #hero div p{
+        font-size: 0.5rem;
+        font: bold;
+    }
+
+    main #hero div button{
+        font-size: 0.4rem;
+    }
+      
+    main #hero div{
+        gap: 0.5em;
+        left: -1%;
+        top: 4%;
+    }
+
+    #time {
+        grid-template-columns: 1fr;
+    }
+
+    #events{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #events div .desc{
+        font-size: 0.6em;
+    }
+    
+    #events div h3{
+        font-size: 0.9em;
+    }
+    
+    #events .date{
+        font-size: 0.9em;
+    }
+
+    #members{
+        grid-template-columns: 1fr;
+    }
+    
+}
