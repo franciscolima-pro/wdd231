@@ -110,7 +110,7 @@
 
     main #hero img{
         width: 80%;
-        height: 11rem;
+        height: auto;
     }
 
     main #hero div h1{
@@ -118,18 +118,19 @@
     }
 
     main #hero div p{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         font: bold;
     }
 
     main #hero div button{
         font-size: 0.4rem;
+        padding: 0.6em;
     }
       
     main #hero div{
         gap: 0.5em;
         left: -1%;
-        top: 4%;
+        top: 1%;
     }
 
     #time {
