@@ -155,5 +155,11 @@
     #members{
         grid-template-columns: 1fr;
     }
+
+    footer :nth-last-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     
 }
