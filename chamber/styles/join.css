@@ -1,0 +1,220 @@
+/* 1 -  Estilização header */
+h1, h2, h3,#footer, nav a{
+    font-family: "Quicksand", serif;
+  }
+
+p{
+    font-family: "Roboto", serif;
+}
+
+header{
+    background-color: #1e1d1d;
+    color: #4D9601;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem 1rem 7rem;
+}
+
+.divlogo{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#theme-toggle{
+    background-color: transparent;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.nav-links li a{
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover, button:hover{
+    color: #4D9601;
+    transform: scale(1.1);
+}
+
+.nav-links li button{
+    border: none;
+}
+/*Estilização Main*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+main .inputData{
+    padding: 0.5em;
+    width: 80%;
+}
+
+main p{
+    margin-top: 2rem;
+}
+
+
+main form label{
+    display: block;
+    margin-top: 1rem;
+}
+
+#submit{
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    background-color:#3f7803;
+    color:white;
+    border: none;
+    font-weight: bold;
+}
+/*estilização segunda section*/
+#cards div{
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+    background-color:#1E1D1D;
+    color:white;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    animation: growCard 0.6s ease-out;
+}
+
+#cards div button{
+    margin-top: 1em;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    background-color:#3f7803;
+    color:white;
+    border: none;
+    font-weight: bold;
+}
+
+#cards h3{
+    margin-top: 1em;
+    animation: growh3 0.8s ease-out;
+}
+/* Animação dos cards */
+@keyframes growCard {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes growh3 {
+    0% {
+        transform: scale(0.9);
+        color: #4D9601;
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Estilização do Modal */
+#myModal div{
+display: flex;
+gap: 1em;
+}
+
+#myModal{
+    padding: 1.5em;
+    background-color: #1E1D1D;
+}
+
+#myModal ul li{
+    font-weight: bold;
+    color: white;
+}
+
+#myModal div h2{
+    color: #4D9601;
+}
+
+#myModal::backdrop{
+    background-color: #4078035c;
+}
+
+#myModal button{
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    color:#4D9601;
+}
+
+main dialog{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+/* Estilizando thankyou.html */
+#results{
+    padding: 1em;
+}
+
+#results h1{
+    padding-left: 1em;
+}
+
+#results p{
+    background-color: #1E1D1D;
+    border-radius: 1em;
+    color: white;
+    margin: 1rem;
+    padding: 1em;
+}
+/* Estilização footer*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e1d1d;
+    padding: 0.7rem;
+    color: white;
+    align-items: center;
+}
+
+.social-links a{
+    padding: 2em;
+}
+
+.footer-first-p{
+    color: #4D9601;
+}
+
+
+@media(max-width: 800px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 3rem;
+    }
+    main form{
+        padding-top: 2rem;
+    }
+}

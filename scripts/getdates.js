@@ -17,6 +17,14 @@ const cseButton = document.getElementById('cse');
 const wddButton = document.getElementById('wdd');
 const coursesContainer = document.getElementById('subjects'); // Container onde os cursos serão exibidos
 
+const modalButton = document.getElementById('modalButton');
+const courseDetails = document.getElementById('course-details');
+
+modalButton.addEventListener('click', function(event){
+  event.preventDefault();
+  courseDetails.showModal();
+})
+
 // Função para mostrar/ocultar os cursos
 function filterCourses(subject) {
   // Limpar cursos exibidos
