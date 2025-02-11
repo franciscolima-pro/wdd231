@@ -1,0 +1,293 @@
+h1, h2, h3,#footer, nav a{
+    font-family: "Quicksand", serif;
+  }
+
+p{
+    font-family: "Roboto", serif;
+}
+
+header{
+    background-color: #1e1d1d;
+    color: #4D9601;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+    padding: 1rem 4rem 1rem 4rem;
+}
+
+.divlogo{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#theme-toggle{
+    background-color: transparent;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.nav-links li a{
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a:hover{
+    color: #4D9601;
+    transform: scale(1.1);
+}
+
+.nav-links li button{
+    border: none;
+}
+
+/* Estilizando o Main */
+.company{
+    background-color: rgba(128, 128, 128, 0.427);
+    margin: 1.5rem;
+    padding: 1em;
+}
+
+.company h2{
+    margin-bottom: 0.5em;
+}
+
+.company button{
+    background-color: #1E1D1D;
+    font-size: larger;
+    color:white;
+    border: none;
+    border-radius: 2em;
+    padding: 1em;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.company button:hover{
+    color:#4D9601;
+}
+
+.data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0.5em;
+}
+
+.data:hover img{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px 1px;
+    border-radius: 1em;
+}
+
+.data p{
+    margin: 1em;
+}
+
+/* Estilizando o Modal */
+dialog {
+    position: fixed;
+    left: 20%;
+    top: 20%;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  ::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+  }
+  
+  dialog button {
+    position: absolute;
+    top: 10px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+  }
+
+
+/* Estilização do Footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e1d1d;
+    padding: 0.7rem;
+    color: white;
+    align-items: center;
+}
+
+.social-links a{
+    padding: 1em;
+}
+
+.footer-first-p{
+    color: #4D9601;
+}
+
+
+@media(min-width: 1025px){
+    header{
+        background-color: #1e1d1d;
+        color: #4D9601;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 7rem 1rem 7rem;
+    }
+
+    dialog {
+        left: 50%;
+      }
+
+    #places{
+       display: grid;
+       grid-template-columns: 1fr 1fr; 
+    }
+
+    .company{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "name but"
+        "data data";
+    }
+
+    .company h2{
+        margin-bottom: 0;
+        padding: 0;
+        grid-area: name;
+    }
+
+    .company .data{
+        grid-area: data;
+    }
+
+    .company button{
+        grid-area: but;
+        padding: 0.5em;
+        height: 2.5rem;
+        margin: 0;
+    }
+
+    .social-links a{
+        padding: 2em;
+     }
+
+}
+
+@media(max-width: 640px){
+    .data:hover img{
+        transform: scale(1);
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-right: 4em;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      
+      .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+      }
+    
+      .nav-links{
+        display: none;
+        background-color: #1e1d1d;
+        padding: 0em 1em 0em 1em;
+        border-radius: 0.5em;
+      }
+
+      .nav-links li a{
+        color: #4D9601;
+        padding-top: 1em;
+      }
+
+      .nav-links.active {
+        gap: 0.5em;
+        display: grid; /* Torna as opções visíveis quando a classe 'active' é adicionada */
+        grid-template-columns: 1fr;
+        align-items:baseline;
+        margin-right: 5em;
+        position: absolute;
+    }
+
+    
+    header{
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        gap: 3em;
+        align-items: center;
+        position: relative;
+      }
+
+    dialog {
+        left: 5%;
+      }
+
+    #places{
+        display: grid;
+        grid-template-columns: 1fr; 
+     }
+ 
+     .company{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas: 
+         "dat data"
+         "but but"
+         "name name";
+     }
+ 
+     .company h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+         margin-bottom: 0;
+         padding: 0;
+         grid-area: name;
+     }
+ 
+     .company .data{
+         grid-area: data;
+     }
+ 
+     .company button{
+         grid-area: but;
+         padding: 0.5em;
+         height: 2.5rem;
+         margin: 0;
+     }
+
+     .social-links a{
+        padding: 2em;
+     }
+
+     .data{
+        display:flex;
+        flex-direction: column;
+     }
+}

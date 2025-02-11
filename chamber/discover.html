@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber Directory Page">
+    <meta name="description" content="Chamber Discover Page">
     <meta name="author" content="Francisco Lima">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Chamber Directory Page"> <!-- Título -->
+    <meta property="og:title" content="Chamber Discover Page"> <!-- Título -->
     <meta property="og:type" content="website"> <!-- Tipo (exemplo: 'website', 'article') -->
     <meta property="og:image" content="https://franciscolima-pro.github.io/wdd231/chamber/images/alliance4.png"> <!-- URL completa da imagem -->
-    <meta property="og:url" content="https://franciscolima-pro.github.io/wdd231/chamber/directory.html"> <!-- URL completa da página -->
+    <meta property="og:url" content="https://franciscolima-pro.github.io/wdd231/chamber/discover.html"> <!-- URL completa da página -->
 
     <link rel="icon" href="images/alliance4.png" type="image/png"> <!-- favicon -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <script src="scripts/script.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -38,9 +38,9 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html"><b>Home</b></a></li>
-                <li><a href="#"><b>Directory</b></a></li>
+                <li><a href="directory.html"><b>Directory</b></a></li>
                 <li><a href="join.html"><b>Join</b></a></li>
-                <li><a href="discover.html"><b>Discover</b></a></li>
+                <li><a href="#"><b>Discover</b></a></li>
                 <li>
                     <!-- Botão de alternância de tema -->
                     <button id="theme-toggle" aria-label="Alternar Tema">
@@ -51,64 +51,13 @@
         </nav>
     </header>
     <main>
-        <div class="menu">
-            <button id="grid">
-                <img src="images/linhas-de-grade.png" alt="linhas-de-grade" width="25"><b>Grid</b>
-            </button>
-            <button id="list">
-                <img src="images/lista-de-reproducao.png" alt="lista-de-reproducao" width="25"><b>List</b> 
-            </button>
-        </div>
-        <section id="companies" class="grid-view">
-            <ul>
-                <li><b>Company</b></li>
-                <li><b>Address</b></li>
-                <li><b>Phone Number</b></li>
-                <li><b>Website</b></li>
-            </ul>
+        <section id="places">
 
-            <div class="company">
-                <img src="images/companhia.png" alt="Company icon" width="100">
-                <p>236 Av. Lind, Curitiba, BR</p>
-                <p>+55 41 9856-8946</p>
-                <p>https://www.blueinnovations.com</p>
-            </div>
-            <div class="company">
-                <img src="images/companhia.png" alt="Company icon" width="100">
-                <p>569 Main St, Curitiba, SP</p>
-                <p>+55 41 9256-8826</p>
-                <p>https://www.techsolutions.com</p>
-            </div>
-            <div class="company">
-                <img src="images/companhia.png" alt="Company icon" width="100">
-                <p>252 Av. Amanci, Curitiba, BR</p>
-                <p>+55 41 9856-8946</p>
-                <p>https://www.greenlife.com</p>
-            </div>
-            <div class="company">
-                <img src="images/companhia.png" alt="Company icon" width="100">
-                <p>2122 Av. Grimaldi, Curitiba, BR</p>
-                <p>+55 41 9366-8826</p>
-                <p>https://www.neoinnovations.com</p>
-            </div>
-            <div class="company">
-                <img src="images/companhia.png" alt="Company icon" width="100">
-                <p>567 Av. Raiert, Curitiba, BR</p>
-                <p>+55 41 1235-8397</p>
-                <p>https://www.lizermotors.com</p>
-            </div>
-            <div class="company">
-                <img src="images/companhia.png" alt="Company icon" width="100">
-                <p>597 Av. Green Line, Curitiba, BR</p>
-                <p>+55 41 9366-7566</p>
-                <p>https://www.publishertrt.com</p>
-            </div>
-            <div class="company">
-                <img src="images/companhia.png" alt="Company icon" width="100">
-                <p>789 Innovation Rd, Curitiba, BR</p>
-                <p>+55 41 2345-6789</p>
-                <p>https://www.brightideas.com</p>
-            </div>
+        </section>
+        <section>
+            <dialog id="allvisits">
+
+            </dialog>
         </section>
     </main>
     <footer>
