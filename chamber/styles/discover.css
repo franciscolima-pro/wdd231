@@ -52,6 +52,11 @@ header{
 }
 
 /* Estilizando o Main */
+main h1{
+    text-align: center;
+    margin: 1rem;
+}
+
 .company{
     background-color: rgba(128, 128, 128, 0.427);
     margin: 1.5rem;
