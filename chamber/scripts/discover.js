@@ -57,7 +57,7 @@ function showData(){
         companyDiv.innerHTML = `
         <h2>${company.name}</h2>
         <div class="data">
-            <img src="/chamber/images/${company.img}" alt="Place image">
+            <img src="images/${company.img}" alt="Place image">
             <div class="desc">
                 <p>${company.description}</p>
                 <p>${company.address}</p>
