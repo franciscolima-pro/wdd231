@@ -84,8 +84,6 @@ async function loadData(){
     }
 }
 
-
-
 function displayResults(data, data2){
     //***Data Forest***                   list[7] dia terça - list[15] wednesday - thurday list[23]
     // const time = data2.list[23].dt;    **Somente para descobrir o dia certo

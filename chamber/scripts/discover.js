@@ -1,4 +1,4 @@
-import {data} from './discover-data.js';
+import {data} from '../data/discover-data.js';
 console.log(data)
 
 let currentYear = new Date().getFullYear();
@@ -57,7 +57,7 @@ function showData(){
         companyDiv.innerHTML = `
         <h2>${company.name}</h2>
         <div class="data">
-            <img src="images/${company.img}" alt="Place image">
+            <img src="images/${company.img}" alt="Place image" loading="lazy">
             <div class="desc">
                 <p>${company.description}</p>
                 <p>${company.address}</p>

@@ -14,13 +14,13 @@ hamburger.addEventListener('click', () => {
 });
 
 
-const myModal = document.getElementById('myModal');
-const modalTitle = document.querySelector('#myModal h2');
-const modalDesc = document.querySelector('#myModal ul');
-const modalButton = document.querySelectorAll('.learnMore');
+export const myModal = document.getElementById('myModal');
+export const modalTitle = document.querySelector('#myModal h2');
+export const modalDesc = document.querySelector('#myModal ul');
+export const modalButton = document.querySelectorAll('.learnMore');
 const closeModal = document.querySelector('#myModal button')
 
-function showData(i){
+export function showData(i){
     modalTitle.innerHTML = i.title;
     modalDesc.innerHTML = i.desc;
 }
