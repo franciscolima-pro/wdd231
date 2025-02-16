@@ -34,9 +34,9 @@
                 <div class="line"></div>
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="" id="home"><b>Home</b></a></li>
-                <li><a href="" id="events"><b>Events & Races</b></a></li>
-                <li><a href="" id="contact"><b>Contact Us</b></a></li>
+                <li><a href="#" id="home"><b>Home</b></a></li>
+                <li><a href="events.html" id="events"><b>Events & Races</b></a></li>
+                <li><a href="contact.html" id="contact"><b>Contact Us</b></a></li>
             </ul>
         </nav>
     </header>
@@ -45,9 +45,14 @@
             <div>
                 <h1>Every turn is a new thrill!</h1>
                 <p>"Race with the fastest karts on the wildest tracks. Feel the adrenaline, and race to victory. Are you ready to take the wheel? Talk to us!"</p>
-                <button><b>Let's Race!</b></button>
+                <a href="contact.html"><b>Let's Race!</b></a>
             </div>
-            <img src="images/kartinghero.webp" alt="Kart Racing Hero Image">
+            <picture>
+                <!-- Imagem para telas grandes (desktop) -->
+                <source media="(min-width: 1024px)" srcset="images/kartinghero.webp">
+                <source media="(min-width: 768px)" srcset="images/kartinghero2.webp">
+                <img src="images/kartinghero3.webp" alt="Kart Racing Hero Image">
+            </picture>
         </section>
         <h2>Home</h2>
         <section id="sec2">
@@ -55,15 +60,15 @@
                 <h3>Tracks</h3>
                 <div  id="tracks">
                     <div class="track">
-                        <img src="images/track1.jpg" alt="Track 1 image">
+                        <img src="images/track1.webp" alt="Track 1 image">
                         <button class="learnMore">learn more</button>
                     </div>
                     <div class="track">
-                        <img src="images/track3.jpg" alt="Track 2 image">
+                        <img src="images/track3.webp" alt="Track 2 image">
                         <button class="learnMore">learn more</button>
                     </div>
                     <div class="track">
-                        <img src="images/track2.jpg" alt="Track 3 image">
+                        <img src="images/track2.webp" alt="Track 3 image">
                         <button class="learnMore">learn more</button>
                     </div>
                 </div>
@@ -91,10 +96,10 @@
                         <b>High-Performance Karts:</b> Our karts offer an exciting experience for drivers of all levels! Equipped with powerful engines, aerodynamic design, and reinforced safety, they are perfect for those seeking adrenaline and fun on the track. Come race and feel the thrill of speed!
                     </div>
                     <div>
-                        <img src="images/kart1.jpg" alt="Kart 1 image">
+                        <img src="images/kart1.webp" alt="Kart 1 image">
                     </div>
                     <div>
-                        <img src="images/kart2.jpg" alt="Kart 2 image">
+                        <img src="images/kart2.webp" alt="Kart 2 image">
                     </div>
                 </div>
             </div>

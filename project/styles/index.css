@@ -32,16 +32,6 @@ header{
     gap: 2rem;
   }
 
-  /* .nav-links {
-    list-style: none;
-    display: none; 
-    flex-direction: column;
-  } */
-  
-  .nav-links li {
-    margin: 10px 0;
-  }
-
   nav a:hover{
     color: white;
   }
@@ -51,25 +41,6 @@ header{
     text-decoration: none;
     font-size: 25px;
   }
-  
-  /* .hamburger {
-    display: flex;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-     margin-left: auto;
-  } */
-  
-  /* .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: white;
-  } */
-
-  /* .nav-links.active{
-    display: flex;
-  } */
 
 /* Estilizando o main */
 h1, h2,#footer, nav a{
@@ -89,6 +60,8 @@ main{
 main h2{
   padding: 2em;
   font-size: 2rem;
+  margin: 2rem;
+  text-align: center ;
 }
 
 #sec2, #sec3{
@@ -102,7 +75,7 @@ main #hero{
   
   main #hero div{
       position: absolute;
-      background-color: #e7760cbe;
+      background-color: #262320be;
       border-radius: 1em;
       padding: 0.5em;
       display: flex;
@@ -112,26 +85,24 @@ main #hero{
       gap: 1em;
       width: 31%;
       left: 8%;
-      top: 6%;
+      top: 15%;
   }
 
-  main h2{
-    margin: 2rem;
-    text-align: center ;
-  }
-
-  #hero div button{
-    padding: 1em;
-    border: none;
+  #hero div a{
+    padding: 0.7em;
+    text-decoration: none;
+    font-family: "quicksand";
+    background-color: white;
     border-radius: 0.8em;
     color: black;
 }
 
 #hero div p{
+  color: #e7750c;
     font-weight: 900;
 }
 
-#hero div button:hover{
+#hero div a:hover{
     transform: scale(1.1);
     color: #e7750c;
 }
@@ -302,4 +273,174 @@ footer{
   
   footer #lastModified{
     color: black;
+  }
+
+  @media(min-width: 768px) and (max-width: 1500px){
+    /* Estilizando a hero div */
+
+
+    main #hero div{
+      top: 8%;
+  }
+
+    #hero div a{
+      padding: 0.3em;
+  }
+  
+  #hero div p{
+    font-size: 0.8em;
+  }
+    
+    #hero div h1{
+        font-size: 1.8em;
+    }
+
+     /* estilizando a sec2 */
+     #sec2{
+      grid-template-columns:1fr;
+      gap: 5em;
+  }
+
+  #tracks{
+    flex-direction: column;
+}
+
+  #tracks img{
+    margin-left: 23%;
+  }
+
+
+    /* estilizando a sec3 */
+    #sec3{
+      grid-template-columns:1fr;
+      gap: 5em;
+    }
+
+    #karts{
+      flex-direction: column;
+    }
+
+    #karts img{
+      margin-left: 23%;
+    }
+    
+    .kartdesc{
+      width: 100%;
+      height: 100;
+    }
+
+    table{
+      width: 100%;
+    }
+  }
+
+  @media(min-width: 350px) and (max-width:800px){
+    header{
+      padding: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header nav{
+      padding: 1rem;
+      flex-direction: column;
+    }
+
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    margin-bottom: 1em;
+  } 
+  
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+  } 
+
+  .nav-links.active{
+    display: flex;
+  } 
+
+    .nav-links {
+    list-style: none;
+    display: none; 
+    flex-direction: column;
+  }  
+
+  .nav-links a{
+    font-size: 1.2em;
+  }
+
+    main {
+      padding: 0rem;
+  }
+
+  main h2{
+    padding: 2em;
+    font-size: 2rem;
+    margin-top: 12rem;
+    text-align: center ;
+  }
+
+
+      /* Estilizando a hero div */
+
+      main #hero div{
+        top: 100%;
+        width: 85%;
+        background-color: #1E1D1D;
+    }
+  
+    
+    #hero div p{
+      font-size: 0.8em;
+    }
+      
+      #hero div h1{
+          font-size: 1.8em;
+      }
+  
+       /* estilizando a sec2 */
+       #sec2{
+        grid-template-columns:1fr;
+        gap: 5em;
+        margin: 1em;
+    }
+  
+    #tracks{
+      flex-direction: column;
+  }
+  
+    #tracks img{
+      margin-left: 8%;
+    }
+  
+  
+      /* estilizando a sec3 */
+      #sec3{
+        grid-template-columns:1fr;
+        gap: 5em;
+        margin: 1rem;
+      }
+  
+      #karts{
+        flex-direction: column;
+      }
+  
+      #karts img{
+        margin-left: 10%;
+      }
+      
+      .kartdesc{
+        width: 100%;
+        height: 100;
+      }
+  
+      table{
+        width: 100%;
+      }
   }
