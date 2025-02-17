@@ -31,12 +31,6 @@ header{
     align-items: center;
     gap: 2rem;
   }
-
-  /* .nav-links {
-    list-style: none;
-    display: none; 
-    flex-direction: column;
-  } */
   
   .nav-links li {
     margin: 10px 0;
@@ -51,25 +45,6 @@ header{
     text-decoration: none;
     font-size: 25px;
   }
-  
-  /* .hamburger {
-    display: flex;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-     margin-left: auto;
-  } */
-  
-  /* .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: white;
-  } */
-
-  /* .nav-links.active{
-    display: flex;
-  } */
 
 /* Estilizando o main */
 h1, h2,#footer, nav a{
@@ -96,7 +71,7 @@ main h1{
 
 .sec1{
     display: flex;
-    gap: 13em;
+    justify-content: space-around;
 }
 
 .div1 iframe{
@@ -215,3 +190,115 @@ footer{
   footer #lastModified{
     color: black;
   }
+
+  @media(min-width: 800px) and (max-width: 1200px){
+    main section{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .div2 h2, .div1 h2{
+      width: 27.4em;
+    }
+
+    form{
+      width: 41.1em;
+    }
+
+    .div1 iframe{
+      width: 41.1em;
+  }
+
+  }
+
+  @media(min-width: 300px) and (max-width:800px){
+    header{
+      padding: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header nav{
+      padding: 1rem;
+      flex-direction: column;
+    }
+
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    margin-bottom: 1em;
+  } 
+  
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+  } 
+
+  .nav-links.active{
+    display: flex;
+  } 
+
+    .nav-links {
+    list-style: none;
+    display: none; 
+    flex-direction: column;
+  }  
+
+  .nav-links a{
+    font-size: 1.2em;
+  }
+
+  main section{
+    padding: 0em 5em 0em 8.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+
+
+  .div1 iframe{
+    width: 21em;
+}
+
+#sec{
+  margin: 1em;
+}
+
+form{
+  width: 21em;
+  height: 31em;
+}
+
+#sec2{
+  margin: 0;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+} 
+
+@media(min-width: 300px) and (max-width:350px){
+  .div1 iframe{
+    width: 18em;
+}
+
+main section{
+  padding: 0em 5em 0em 4.5em;
+}
+}
+
+@media(min-width: 380px) and (max-width:400px){
+  .div1 iframe{
+    width: 21em;
+}
+
+main section{
+  padding: 0em 5em 0em 7em;
+}
+}
+

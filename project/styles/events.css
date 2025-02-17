@@ -32,11 +32,6 @@ header{
     gap: 2rem;
   }
 
-  /* .nav-links {
-    list-style: none;
-    display: none; 
-    flex-direction: column;
-  } */
   
   .nav-links li {
     margin: 10px 0;
@@ -51,25 +46,6 @@ header{
     text-decoration: none;
     font-size: 25px;
   }
-  
-  /* .hamburger {
-    display: flex;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-     margin-left: auto;
-  } */
-  
-  /* .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: white;
-  } */
-
-  /* .nav-links.active{
-    display: flex;
-  } */
 
 /* Estilizando o main */
 h1, h2,#footer, nav a{
@@ -95,8 +71,13 @@ main h1{
     margin-top: 3rem;
 }
 
+.races{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .race{
-    display: flex;
+    display: grid;
     gap: 1em;
     color: #e7750c;
     padding: 2em;
@@ -105,8 +86,8 @@ main h1{
 }
 
 .race img{
-    width: 300px;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .race img:hover{
@@ -132,4 +113,76 @@ footer{
   
   footer #lastModified{
     color: black;
+  }
+
+  @media(min-width: 800px) and (max-width: 1200px){
+    main section{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .races{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media(min-width: 300px) and (max-width:800px){
+    header{
+      padding: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    header nav{
+      padding: 1rem;
+      flex-direction: column;
+    }
+
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    margin-bottom: 1em;
+  } 
+  
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+  } 
+
+  .nav-links.active{
+    display: flex;
+  } 
+
+    .nav-links {
+    list-style: none;
+    display: none; 
+    flex-direction: column;
+  }  
+
+  .nav-links a{
+    font-size: 1.2em;
+  }
+
+    .race{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .races{
+      grid-template-columns: 1fr;
+    }
+
+    main section{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 1.5em;
+    }
+  
   }
